@@ -1,0 +1,49 @@
+#top {
+  position: fixed;
+  left: 5%;
+  bottom: 10%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #B88B58;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s;
+  &.show {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+.phone{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2em;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  background-color: #B88B58;
+  animation: phone 1s infinite;
+}
+@keyframes phone {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

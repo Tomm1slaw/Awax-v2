@@ -1,0 +1,17 @@
+// other icons
+.phone {
+  right: 0;
+  position: fixed;
+  top: 90%;
+  & img {
+    width: 75%;
+  }
+}
+.top {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  & img {
+    width: 75%;
+  }
+}

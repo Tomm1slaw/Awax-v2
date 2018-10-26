@@ -1,0 +1,39 @@
+.service {
+  background: #000000;
+  color: #ffffff;
+  padding-bottom: 40px;
+  h2 {
+    color: #ffffff;
+  }
+  &__row {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+  & img {
+   transition-duration: 1s;
+  }
+  & img:hover {
+    transform: rotateY(360deg);
+  }
+  &__item {
+    padding: 20px;
+    border-top: 1px solid #ffffff;
+  }
+  &__item:first-child {
+   border-top: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .service__row {
+    flex-direction: row;
+  }
+  .service__item {
+    border-top: none;
+    border-left: 1px solid #ffffff;
+      &:last-child {
+        border-right: 1px solid #ffffff;
+      }
+    }
+}

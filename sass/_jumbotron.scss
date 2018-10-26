@@ -1,0 +1,29 @@
+.jumbotron {
+  background: url(../images/Header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  &__text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 72px;
+  }
+  span {
+    color: #B88B58;
+  }
+  p {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  button {
+    @include button;
+  }
+}

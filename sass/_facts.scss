@@ -1,0 +1,17 @@
+.facts {
+  background: #000000;
+  & h2, h4 {
+    color: #ffffff;
+  }
+  &__item h2{
+    color: #B88B58;
+    font-size: 48px;
+  }
+  &__item p {
+    color: #5A5A5A;
+  }
+  &__item hr {
+    width: 10%;
+    color: #5A5A5A;
+  }
+}

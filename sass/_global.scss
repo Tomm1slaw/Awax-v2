@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h3, h5, h6 {
+  text-transform: uppercase;
+}
+* {
+  box-sizing: border-box;
+}
+section {
+  padding: 20px 0;
+}
+#map {
+  height: 60vh;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+[class*="fa-"] {
+  width: 16px;
+}
+
+// mixins
+@mixin button {
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #B88B58;
+  padding: 15px;
+  margin-top: 80px;
+  transition-duration: 2s;
+  &:hover {
+    transform: scale3d(1.5, 1.5, 1);
+  }
+}
+@mixin title ($color) {
+  h2 {
+    color: $color;
+  }
+  h6 {
+    color: #AEAEAE;
+  }
+}

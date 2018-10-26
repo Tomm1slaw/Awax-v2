@@ -1,0 +1,24 @@
+.premium {
+  &__img {
+    width: 100%;
+  }
+  ul {
+    position: relative;
+    color: #878787;
+  }
+  li {
+    list-style-type: none;
+    text-align: left;
+  }
+  li:before {
+    position: absolute;
+    content: '';
+    background: url('../images/icon.png');
+    height: 30px;
+    width: 34px;
+    left: 0;
+  }
+  button {
+    @include button;
+  }
+}

@@ -1,0 +1,21 @@
+.price {
+  background: #F7F7F7;
+  &__card {
+      background: #ffffff;
+      padding: 40px 0;
+      width: 50%;
+      margin-bottom: 20px;
+      hr {
+        width: 10%;
+      }
+      button {
+        @include button;
+      }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .price__card {
+    width: 20%;
+  }
+}

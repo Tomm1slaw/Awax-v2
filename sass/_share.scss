@@ -1,0 +1,54 @@
+.share {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__text {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    img {
+      vertical-align: middle;
+    }
+  }
+  &__icons {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    span {
+      padding: 5px;
+    }
+    a {
+    color: #ffffff;
+    border-radius: 50%;
+    transition: transform 1s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    &--twitter {
+      background: #0E9FCB;
+    }
+    &--instagram {
+      background: #0B4D6F;
+    }
+    &--facebook {
+      background: #354F73;
+    }
+    &--google {
+      background: #D36D67;
+    }
+    &--pinterest {
+      background: #701219;
+    }
+    i {
+      color: white;
+      text-align: center;
+      }
+    a {
+      padding: 10px;
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
